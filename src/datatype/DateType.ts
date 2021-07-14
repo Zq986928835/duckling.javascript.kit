@@ -7,12 +7,12 @@
 /***
  * 初始化日期格式化函数
  */
-export const formatFnInit = function () {
+export const dateFormatPrototypeInit = function () {
     /**
      * 日期格式化
      * @param pattern 需要转换成的格式，如yyyy-MM-dd
      */
-    Date.prototype.format = function (pattern = "yyyy-MM-dd") {
+    Date.prototype.format = function (pattern: string = "yyyy-MM-dd"): string {
         let date = this;
 
         if (!date) { return ''; }
@@ -23,13 +23,13 @@ export const formatFnInit = function () {
          * @param len 保留位数
          * @returns 
          */
-        const zeroize = function (value, len = 2) {
+        const zeroize = function (value: string, len: number = 2): string {
             value = '000' + value;
             return value.substring(value.length - len);
         };
 
 
-        return pattern.replace(/"[^"]*"|'[^']*'|\b(?:d{1,4}|M{1,4}|yy(?:yy)?|([hHmstT])\1?|[lLZ])\b/g, ($0) => {
+        return pattern.replace(/"[^"]*"|'[^']*'|\b(?:d{1,4}|M{1,4}|yy(?:yy)?|([hHmstT])\1?|[lLZ])\b/g, ($0: string): string => {
             switch ($0) {
                 case 'd': return date.getDate().toString();
                 case 'dd': return zeroize(date.getDate().toString());
