@@ -1,0 +1,19 @@
+{
+  "name": "duckling.javascript.kit",
+  "version": "1.0.1",
+  "description": "小鸭子js套件；日期函数，vueajax封装",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zq986928835/duckling.javascript.kit.git"
+  },
+  "author": "zhouquan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zq986928835/duckling.javascript.kit/issues"
+  },
+  "homepage": "https://github.com/Zq986928835/duckling.javascript.kit#readme"
+}
