@@ -1,6 +1,6 @@
 {
   "name": "duckling.javascript.kit",
-  "version": "1.0.9",
+  "version": "1.0.21",
   "description": "小鸭子js套件；日期函数，vueajax封装",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
@@ -21,5 +21,10 @@
   "dependencies": {},
   "devDependencies": {
     "typescript": "^4.3.5"
-  }
+  },
+  "files": [
+    "package.json",
+    "src/typings",
+    "dist"
+  ]
 }

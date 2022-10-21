@@ -1,22 +1,20 @@
-/**
- * 日期类型的扩展函数
- */
-
-
-
 /***
  * 初始化日期格式化函数
  */
 export const dateFormatPrototypeInit = function () {
+
     /**
      * 日期格式化
      * @param pattern 需要转换成的格式，如yyyy-MM-dd
      */
-    Date.prototype.format = function (pattern: string = "yyyy-MM-dd"): string {
+    Date.prototype.format = function (pattern?: string): string {
         let date = this;
 
         if (!date) { return ''; }
+        // 无效日期
+        if (isNaN(date.getTime())) return '';
 
+        if (!pattern) pattern = "yyyy-MM-dd";
         /**
          * 补零函数
          * @param value 初始字符串 
@@ -58,3 +56,4 @@ export const dateFormatPrototypeInit = function () {
         });
     };
 }
+
