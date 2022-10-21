@@ -18,6 +18,7 @@ objectVal?.format("yyyy-MM-dd HH:mm");
 
 
 更新npm
+https://www.npmjs.com/
 修改package.json 版本号，最好在README修改使用文档
 npm run build
 npm publish     根目录执行命令，推上去
