@@ -20,7 +20,7 @@ export const objectPrototypeInit = function () {
         } if (typeof this === "number") {
             return new Date(this).format(pattern);
         } else {
-            return this.toString();
+            return this?.toString() ?? "";
         }
     };
 }

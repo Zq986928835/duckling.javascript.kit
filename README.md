@@ -27,3 +27,4 @@ https://www.jianshu.com/p/c8a6f1a14e8b/
 
 其他项目使用yarn升级
 yarn upgrade-interactive --latest
+yarn upgrade duckling.javascript.kit

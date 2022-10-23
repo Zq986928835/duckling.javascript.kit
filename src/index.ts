@@ -1,14 +1,11 @@
-import '../src/typings/types'
-
-
 import { dateFormatPrototypeInit } from "./datatype/DateType";
-import { objectPrototypeInit } from "./datatype/ObjectType";
-import { numberPrototypeInit } from "./datatype/NumberType";
+export { bundle } from "./bundle";
+export { dateFormatPrototypeInit } from "./datatype/DateType";
+export { objectPrototypeInit } from "./datatype/ObjectType";
+export { numberPrototypeInit } from "./datatype/NumberType";
 
-function install() {
-    dateFormatPrototypeInit();
-    numberPrototypeInit();
-    objectPrototypeInit();
-}
 
-export default install;
+export const xxx = dateFormatPrototypeInit;
+
+
+export default { dateFormatPrototypeInit };
